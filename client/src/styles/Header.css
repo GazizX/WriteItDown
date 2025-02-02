@@ -1,0 +1,57 @@
+/* Базовые стили для хедера */
+header {
+    margin: 0 auto;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+
+  h1{
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+  
+  /* Стили логотипа */
+  header img {
+    height: 80px;
+  }
+  
+  /* Стили для кнопки темы */
+  .themeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .themeBtn:hover {
+    transform: scale(1.1);
+  }
+  
+  .themeBtn img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  /* Светлая тема */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+  }
+  
+  /* Темно-серая тема */
+  [data-theme="dark"] {
+    --bg-color: #2e2e2e;
+    --text-color: #ffffff;
+  }
+  

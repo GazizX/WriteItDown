@@ -1,0 +1,22 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 16px;
+    --line-height: 1.6;
+    --text-color-light: #333333;
+    --text-color-dark: #ffffff;
+    --bg-color-light: #ffffff;
+    --bg-color-dark: #2e2e2e;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
+    margin: 0;
+    background-color: var(--bg-color);
+  }

@@ -1,0 +1,58 @@
+/* Стили для списка слов */
+.word-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .word-body{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* .word-item:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transform: translateY(-2px);
+  } */
+  
+  .word{
+    font-size: var(--font-size);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .translation{
+    font-size: var(--font-size);
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .word-item .delete-btn {
+    background: none;
+    border: none;
+    color: #ff4d4f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .word-item .delete-btn:hover {
+    background-color: rgba(255, 77, 79, 0.1);
+  }
+  
